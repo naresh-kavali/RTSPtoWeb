@@ -6,10 +6,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/deepch/vdk/format/rtmp"
+	"github.com/naresh-kavali/vdk/format/rtmp"
 
-	"github.com/deepch/vdk/av"
-	"github.com/deepch/vdk/format/rtspv2"
+	"github.com/naresh-kavali/vdk/av"
+	"github.com/naresh-kavali/vdk/format/rtspv2"
 	"github.com/sirupsen/logrus"
 )
 
@@ -72,7 +72,7 @@ func StreamServerRunStream(streamID string, channelID string, opt *ChannelST) (i
 	var fps int
 	var preKeyTS = time.Duration(0)
 	var Seq []*av.Packet
-	RTSPClient, err := rtspv2.Dial(rtspv2.RTSPClientOptions{URL: opt.URL, InsecureSkipVerify: opt.InsecureSkipVerify, DisableAudio: !opt.Audio, DialTimeout: 3 * time.Second, ReadWriteTimeout: 5 * time.Second, Debug: opt.Debug, OutgoingProxy: true})
+	RTSPClient, err := rtspv2.Dial(rtspv2.RTSPClientOptions{URL: opt.URL, InsecureSkipVerify: opt.InsecureSkipVerify, DisableAudio: !opt.Audio, DialTimeout: 3 * time.Second, ReadWriteTimeout: 5 * time.Second, Debug: opt.Debug, OutgoingProxy: true, Headers: opt.Headers})
 	if err != nil {
 		return 0, err
 	}

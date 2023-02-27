@@ -1,0 +1,7 @@
+time="2023-02-27T21:29:31+05:30" level=info msg="Server CORE start" func=main module=main
+time="2023-02-27T21:29:31+05:30" level=info msg="Server HTTP start" call=Start func=RTSPServer module=http_server
+time="2023-02-27T21:29:31+05:30" level=info msg="Server RTSP start" call=Start func=RTSPServer module=rtsp_server
+time="2023-02-27T21:29:31+05:30" level=info msg="Server start success a wait signals" func=main module=main
+time="2023-02-27T21:29:33+05:30" level=info msg="Run stream" call=Run channel=0 func=StreamServerRunStreamDo module=core stream=127889db-550b-4671-82ac-88ab51e93506
+time="2023-02-27T21:29:35+05:30" level=info msg="Success connection RTSP" call=Start channel=0 func=StreamServerRunStream module=core stream=127889db-550b-4671-82ac-88ab51e93506
+time="2023-02-27T21:31:53+05:30" level=info msg="Stream exit by signal or not client" call=StreamServerRunStream channel=0 func=StreamServerRunStreamDo module=core stream=127889db-550b-4671-82ac-88ab51e93506

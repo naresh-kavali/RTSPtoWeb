@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/deepch/vdk/av"
+	"github.com/naresh-kavali/vdk/av"
 	"github.com/sirupsen/logrus"
 )
 
@@ -96,6 +96,7 @@ type ChannelST struct {
 	Status             int    `json:"status,omitempty" groups:"api"`
 	InsecureSkipVerify bool   `json:"insecure_skip_verify,omitempty" groups:"api,config"`
 	Audio              bool   `json:"audio,omitempty" groups:"api,config"`
+	Headers 		   map[string]string `json:"headers,omitempty" groups:"api,config"`
 	runLock            bool
 	codecs             []av.CodecData
 	sdp                []byte

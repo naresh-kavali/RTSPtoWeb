@@ -1,9 +1,9 @@
-module github.com/deepch/RTSPtoWeb
+module github.com/naresh-kavali/RTSPtoWeb
 
 go 1.19
 
 require (
-	github.com/deepch/vdk v0.0.19
+	github.com/naresh-kavali/vdk v0.0.4
 	github.com/gin-gonic/autotls v0.0.5
 	github.com/gin-gonic/gin v1.9.0
 	github.com/gobwas/ws v1.1.0

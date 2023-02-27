@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/deepch/vdk/format/mp4f"
+	"github.com/naresh-kavali/vdk/format/mp4f"
 
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"

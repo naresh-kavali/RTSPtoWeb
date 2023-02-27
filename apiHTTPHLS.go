@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"time"
 
-	"github.com/deepch/vdk/format/ts"
+	"github.com/naresh-kavali/vdk/format/ts"
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 )

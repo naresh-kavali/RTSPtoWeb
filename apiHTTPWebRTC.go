@@ -3,7 +3,7 @@ package main
 import (
 	"time"
 
-	webrtc "github.com/deepch/vdk/format/webrtcv3"
+	webrtc "github.com/naresh-kavali/vdk/format/webrtcv3"
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 )

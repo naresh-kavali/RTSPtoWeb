@@ -9,7 +9,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/deepch/vdk/format/mp4f"
+	"github.com/naresh-kavali/vdk/format/mp4f"
 	"github.com/sirupsen/logrus"
 )
 

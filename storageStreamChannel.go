@@ -3,7 +3,7 @@ package main
 import (
 	"time"
 
-	"github.com/deepch/vdk/av"
+	"github.com/naresh-kavali/vdk/av"
 	"github.com/imdario/mergo"
 	"github.com/sirupsen/logrus"
 )
